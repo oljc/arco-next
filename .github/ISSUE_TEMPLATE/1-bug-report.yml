@@ -1,0 +1,139 @@
+name: Bug Report
+description: File a bug report.
+title: "[Component]: xxx"
+labels: ["pending triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug. Please fill in the following details to help us reproduce and fix the issue quickly.
+
+        - Please format your issue title as:  `[input-number]：xxxx short description`
+        - Please check if this issue or a duplicate has been reported by anyone before
+        - Provide a minimal reproduction link if possible
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: "2.57.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: components
+    attributes:
+      label: Components
+      description: The component where the issue occurs
+      multiple: true
+      options:
+        - all
+        - affix
+        - alert
+        - anchor
+        - auto-complete
+        - avatar
+        - back-top
+        - badge
+        - breadcrumb
+        - button
+        - calendar
+        - card
+        - carousel
+        - cascader
+        - checkbox
+        - collapse
+        - color-picker
+        - comment
+        - config-provider
+        - date-picker
+        - descriptions
+        - divider
+        - drawer
+        - dropdown
+        - empty
+        - form
+        - grid
+        - icon
+        - image
+        - input
+        - input-number
+        - input-tag
+        - layout
+        - link
+        - list
+        - mention
+        - menu
+        - message
+        - modal
+        - notification
+        - overflow-list
+        - page-header
+        - pagination
+        - popconfirm
+        - popover
+        - progress
+        - radio
+        - rate
+        - resize-box
+        - result
+        - scrollbar
+        - select
+        - skeleton
+        - slider
+        - space
+        - spin
+        - split
+        - statistic
+        - steps
+        - switch
+        - table
+        - tabs
+        - tag
+        - textarea
+        - time-picker
+        - timeline
+        - tooltip
+        - transfer
+        - tree
+        - tree-select
+        - trigger
+        - typography
+        - upload
+        - verification-code
+        - watermark
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect instead?
+      placeholder: Describe the bug clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: "How do you trigger this bug? Please walk us through it step by step."
+      placeholder: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra info
+      description: If possible, provide extra details (e.g., environment, logs, screenshots) to help us investigate.
+      placeholder: |
+        - OS: macOS
+        - Node: 20.x
+        - Browser: Chrome xxx
+        ...

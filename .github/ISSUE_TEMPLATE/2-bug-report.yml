@@ -1,0 +1,139 @@
+name: Bug 报告
+description: 提交一个错误报告
+title: "[xxx组件]：xxx"
+labels: ["pending triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你花时间反馈问题，请填写以下信息以帮助我们快速复现并修复该问题。
+
+        - 请将标题格式化为：`[input-number]：xxx 简短描述`
+        - 请确认该问题是否已经被反馈过，避免重复提交
+        - 如果可以，请提供最小可复现仓库链接或代码片段
+
+  - type: input
+    id: version
+    attributes:
+      label: 使用的版本
+      placeholder: "2.57.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: components
+    attributes:
+      label: 涉及的组件
+      description: 请选择发生问题的组件（可多选）
+      multiple: true
+      options:
+        - all
+        - affix
+        - alert
+        - anchor
+        - auto-complete
+        - avatar
+        - back-top
+        - badge
+        - breadcrumb
+        - button
+        - calendar
+        - card
+        - carousel
+        - cascader
+        - checkbox
+        - collapse
+        - color-picker
+        - comment
+        - config-provider
+        - date-picker
+        - descriptions
+        - divider
+        - drawer
+        - dropdown
+        - empty
+        - form
+        - grid
+        - icon
+        - image
+        - input
+        - input-number
+        - input-tag
+        - layout
+        - link
+        - list
+        - mention
+        - menu
+        - message
+        - modal
+        - notification
+        - overflow-list
+        - page-header
+        - pagination
+        - popconfirm
+        - popover
+        - progress
+        - radio
+        - rate
+        - resize-box
+        - result
+        - scrollbar
+        - select
+        - skeleton
+        - slider
+        - space
+        - spin
+        - split
+        - statistic
+        - steps
+        - switch
+        - table
+        - tabs
+        - tag
+        - textarea
+        - time-picker
+        - timeline
+        - tooltip
+        - transfer
+        - tree
+        - tree-select
+        - trigger
+        - typography
+        - upload
+        - verification-code
+        - watermark
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 问题是什么？你原本期望是什么？
+      placeholder: 请清晰描述问题。
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现步骤
+      description: 请按步骤描述如何触发此 bug
+      placeholder: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息（可选）
+      description: 如果可以，请提供额外信息（如环境、日志、截图等），以帮助我们更好地理解和复现问题。
+      placeholder: |
+        - 系统：macOS
+        - Node：20.x
+        - 浏览器：Chrome xxx
+        ...

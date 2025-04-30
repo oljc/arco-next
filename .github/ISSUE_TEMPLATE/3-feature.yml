@@ -1,0 +1,37 @@
+name: Feature Request
+description: Suggest a new feature or improvement.
+title: "[Feature]: xxx"
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your suggestion! Please provide the following details to help us better understand your feature request.
+
+        - Please format your issue title as: `[Feature]：xxx short description`
+        - Before submitting, please check if a similar feature request already exists
+        - Describe your use case clearly so we can understand the value
+
+  - type: input
+    id: related-component
+    attributes:
+      label: Related Component (if any)
+      placeholder: e.g., input-number
+    validations:
+      required: false
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What problem would this feature solve for you?
+      placeholder: Please clearly describe what your needs are.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What’s your idea to solve the problem or improve the component?
+      placeholder: Describe your suggested solution or improvement.
