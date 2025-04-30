@@ -1,0 +1,38 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "schedule:weekly"
+  ],
+  "packageRules": [
+    {
+      "semanticCommitType": "chore",
+      "matchPackageNames": ["**"],
+      "rangeStrategy": "bump"
+    },
+    {
+      "groupName": "types",
+      "groupSlug": "types",
+      "matchPackageNames": ["@types/**"]
+    },
+    {
+      "groupName": "vite packages",
+      "groupSlug": "vite",
+      "extends": ["packages:vite"]
+    },
+    {
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch"]
+    }
+  ],
+  "ignorePaths": [
+    "**/node_modules/**"
+  ],
+  "ignoreDeps": [
+    "pnpm"
+  ],
+  "postUpdateOptions": [ "pnpmDedupe"],
+  "prFooter": ""
+}
