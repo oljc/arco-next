@@ -9,7 +9,7 @@ If you discover a security vulnerability, **please DO NOT create a public issue*
 Instead, contact us privately:
 
 - 📧 Email: ljc.byte@gmail.com
-- 🔒 GitHub Advisory: https://github.com/oljc/arco-next-vue/security/advisories/new
+- 🔒 GitHub Advisory: https://github.com/oljc/arco-next/security/advisories/new
 
 Please include:
 
@@ -56,4 +56,4 @@ We recommend reviewing [OWASP Secure Coding Guidelines](https://owasp.org/www-pr
 
 ---
 
-🤝 Thank you for helping us make `arco-next-vue` more secure!
+🤝 Thank you for helping us make `arco-next` more secure!

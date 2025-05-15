@@ -1,7 +1,7 @@
 <!--
   Thanks so much for your PR and contribution.
 
-  Before submitting, please make sure to follow the Pull Request Guidelines: https://github.com/oljc/arco-next-vue/blob/main/.github/CONTRIBUTING.md
+  Before submitting, please make sure to follow the Pull Request Guidelines: https://github.com/oljc/arco-next/blob/main/.github/CONTRIBUTING.md
 -->
 
 ## Types of changes
