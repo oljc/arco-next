@@ -1,0 +1,70 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-vue",
+    "stylelint-config-recommended-less"
+  ],
+  "plugins": ["stylelint-less"],
+  "rules": {
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["deep", "global"]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["v-deep", "v-global", "v-slotted"]
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen",
+          "function",
+          "if",
+          "each",
+          "include",
+          "mixin",
+          "use"
+        ]
+      }
+    ],
+    "no-empty-source": null,
+    "no-descending-specificity": null,
+    "font-family-no-missing-generic-family-keyword": null
+  },
+  "overrides": [
+    {
+      "files": ["*.vue", "**/*.vue", "*.html", "**/*.html"],
+      "extends": ["stylelint-config-recommended"],
+      "rules": {
+        "keyframes-name-pattern": null,
+        "selector-pseudo-class-no-unknown": [
+          true,
+          {
+            "ignorePseudoClasses": ["deep", "global"]
+          }
+        ],
+        "selector-pseudo-element-no-unknown": [
+          true,
+          {
+            "ignorePseudoElements": ["v-deep", "v-global", "v-slotted"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.less", "**/*.less"],
+      "customSyntax": "postcss-less",
+      "extends": ["stylelint-config-recommended-less"]
+    }
+  ],
+  "ignoreFiles": ["node_modules/**", "**/dist/**", "**/es/**", "**/lib/**"]
+}

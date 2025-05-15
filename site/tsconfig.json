@@ -1,0 +1,27 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+    },
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": false,
+    "strict": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.vue", "**/*.js", "vite.config.ts", ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.md",
+  ]
+}

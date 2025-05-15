@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2015",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    /* Paths */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "moduleResolution": "node",
+    "removeComments": false,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "skipLibCheck": true,
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.vue"],
+  "exclude": [
+    "dist",
+    "**/node_modules",
+    "**/__test__/**",
+    "**/__demo__/**",
+    "**/*.md"
+  ]
+}

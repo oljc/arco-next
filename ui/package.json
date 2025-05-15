@@ -1,0 +1,90 @@
+{
+  "name": "arco-next",
+  "version": "2.57.0-alpha.1",
+  "title": "Arco Next Vue",
+  "description": "Arco Next Vue, a Vue 3 component library based on Arco Design",
+  "author": "ljc.byte@gmail.com",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "types": "es/index.d.ts",
+  "unpkg": "dist/index.min.js",
+  "jsdelivr": "dist/index.min.js",
+  "style": "dist/index.min.css",
+  "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.mjs",
+      "require": "./lib/index.js",
+      "default": "./lib/index.js"
+    },
+    "./es/*": "./es/*",
+    "./lib/*": "./lib/*",
+    "./dist/*": "./dist/*",
+    "./style": "./dist/index.min.css",
+    "./package.json": "./package.json"
+  },
+  "vetur": {
+    "tags": "helper/tags.json",
+    "attributes": "helper/attributes.json"
+  },
+  "web-types": "helper/web-types.json",
+  "files": [
+    "dist",
+    "es",
+    "lib",
+    "helper"
+  ],
+  "dependencies": {
+    "@arco-design/color": "^0.4.0",
+    "b-tween": "^0.3.3",
+    "b-validate": "^1.5.3",
+    "compute-scroll-into-view": "^3.1.1",
+    "dayjs": "^1.11.13",
+    "number-precision": "^1.6.0",
+    "resize-observer-polyfill": "^1.5.1",
+    "scroll-into-view-if-needed": "^3.1.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.15",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "arco",
+    "arco-design",
+    "arco-next",
+    "component",
+    "components",
+    "library",
+    "ui",
+    "design",
+    "framework",
+    "vue",
+    "vue3"
+  ],
+  "sideEffects": [
+    "*.css",
+    "*.less"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/oljc/arco-next",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oljc/arco-next.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oljc/arco-next/issues"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
