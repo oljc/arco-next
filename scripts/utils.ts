@@ -72,7 +72,7 @@ export const ensureEmptyDir = async (dirPath: string) => {
  * 清理字符串中的特殊字符
  */
 export const sanitize = (v: string) =>
-  v ? v.replace(/\|/g, '\\|').replace(/\n/g, ' ').trim() : '';
+  v ? v.replace(/\\/g, '\\\\').replace(/\|/g, '\\|').replace(/\n/g, ' ').trim() : '';
 
 /**
  * 移除引号
