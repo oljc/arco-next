@@ -12,11 +12,7 @@
           </template>
         </a-button>
       </a-tooltip>
-      <a-link
-        class="navbar-link"
-        href="https://github.com/arco-design/arco-design-vue"
-        target="_blank"
-      >
+      <a-link class="navbar-link" href="https://github.com/oljc/arco-next" target="_blank">
         <icon-github />
       </a-link>
       <a-tooltip
