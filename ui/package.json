@@ -48,7 +48,7 @@
     "vue": "^3.5.16"
   },
   "devDependencies": {
-    "@types/node": "^22.15.29",
+    "@types/node": "^22.15.31",
     "@vue/tsconfig": "^0.7.0",
     "typescript": "^5.8.3"
   },
