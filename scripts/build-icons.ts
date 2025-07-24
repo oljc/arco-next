@@ -88,16 +88,8 @@ const onClick = (ev: MouseEvent) => emit('click', ev);
 `;
 
 const svgoPlugins: PluginConfig[] = [
-  {
-    name: 'preset-default',
-    params: {
-      overrides: {
-        removeViewBox: false,
-      },
-    },
-  },
   'removeStyleElement',
-  'removeScriptElement',
+  'removeScripts',
   'removeDimensions',
   {
     name: 'removeAttrs',

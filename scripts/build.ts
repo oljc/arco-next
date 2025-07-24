@@ -74,7 +74,7 @@ async function buildDist(type: 'normal' | 'icon' = 'normal') {
   const config: InlineConfig = {
     mode: 'production',
     build: {
-      target: 'modules',
+      target: 'es2020',
       emptyOutDir: false,
       sourcemap: true,
       minify: false,
@@ -195,7 +195,7 @@ async function buildStyle() {
   await build({
     mode: 'production',
     build: {
-      target: 'modules',
+      target: 'es2020',
       emptyOutDir: false,
       minify: false,
       reportCompressedSize: false,

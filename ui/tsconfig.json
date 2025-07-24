@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2015",
+    "target": "ES2020",
     "module": "ESNext",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     /* Paths */
@@ -9,7 +9,7 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "removeComments": false,
     "allowJs": true,
     "esModuleInterop": true,
