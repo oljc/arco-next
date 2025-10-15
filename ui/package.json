@@ -41,16 +41,16 @@
     "b-tween": "^0.3.3",
     "b-validate": "^1.5.3",
     "compute-scroll-into-view": "^3.1.1",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.18",
     "number-precision": "^1.6.0",
     "resize-observer-polyfill": "^1.5.1",
     "scroll-into-view-if-needed": "^3.1.0",
-    "vue": "^3.5.18"
+    "vue": "^3.5.22"
   },
   "devDependencies": {
-    "@types/node": "^24.1.0",
-    "@vue/tsconfig": "^0.7.0",
-    "typescript": "^5.8.3"
+    "@types/node": "^24.7.2",
+    "@vue/tsconfig": "^0.8.1",
+    "typescript": "^5.9.3"
   },
   "keywords": [
     "arco",
