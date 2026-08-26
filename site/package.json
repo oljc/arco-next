@@ -14,7 +14,7 @@
     "codesandbox": "^2.2.3",
     "dayjs": "^1.11.21",
     "fs-extra": "^11.4.0",
-    "js-yaml": "^4.3.0",
+    "js-yaml": "^5.4.1",
     "less": "^4.8.0",
     "marked": "^16.4.2",
     "nprogress": "^0.2.0",
