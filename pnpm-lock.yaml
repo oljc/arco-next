@@ -112,8 +112,8 @@ importers:
         specifier: ^8.5.23
         version: 8.5.23
       postcss-less:
-        specifier: ^6.0.0
-        version: 6.0.0(postcss@8.5.23)
+        specifier: ^7.1.1
+        version: 7.1.1(postcss@8.5.23)
       prettier:
         specifier: ^3.9.6
         version: 3.9.6
@@ -1922,6 +1922,7 @@ packages:
   eslint@9.39.5:
     resolution: {integrity: sha512-DgZS62aPLXKlnxILS/AYCoRvHaZeXceIzlXPkkGGzJWSow1aEk0lbTlxUSlyjC8jcaKxAdOnTDz+o1JFSBsyjw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -2339,6 +2340,7 @@ packages:
   image-size@0.8.3:
     resolution: {integrity: sha512-SMtq1AJ+aqHB45c3FsB4ERK0UCiA2d3H1uq8s+8T0Pf8A3W4teyBQyaFaktH6xvZqh+npwlKU7i4fJo0r7TYTg==}
     engines: {node: '>=6.9.0'}
+    deprecated: Please migrate to image-size@2.x
     hasBin: true
 
   import-fresh@3.3.1:
@@ -3015,6 +3017,12 @@ packages:
     engines: {node: '>=12'}
     peerDependencies:
       postcss: ^8.3.5
+
+  postcss-less@7.1.1:
+    resolution: {integrity: sha512-BUsJ7FKVpBM2K21vdV69Iyg+bh6jeMNiRLc+wtn2arsmBNieUzqXPi3crDVWtEDWFBKzY7vmqzOPyKagHf55uQ==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      postcss: ^8.5.32
 
   postcss-resolve-nested-selector@0.1.6:
     resolution: {integrity: sha512-0sglIs9Wmkzbr8lQwEyIzlDOOC9bGmfVKcJTaxv3vMmd3uo4o4DerC3En0bnmgceeql9BfC8hRkp7cg0fjdVqw==}
@@ -6918,6 +6926,10 @@ snapshots:
       postcss-safe-parser: 6.0.0(postcss@8.5.23)
 
   postcss-less@6.0.0(postcss@8.5.23):
+    dependencies:
+      postcss: 8.5.23
+
+  postcss-less@7.1.1(postcss@8.5.23):
     dependencies:
       postcss: 8.5.23
 
